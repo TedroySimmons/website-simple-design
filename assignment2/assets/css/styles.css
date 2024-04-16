@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway, fantasy;
+    color: white;
+}
+
+body{
+    background:#000;
+    margin: 0;
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/torii-7256271_1920.jpg");
+    width: 100%;
+    height: 140vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    background-color: grey;
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    padding: 1.55em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.hello-world{
+    text-transform: capitalize;
+    position: absolute;
+    top: 45%;
+    left: 36.8%;
+    font-size: 600%;
+
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25em;
+    position: absolute;
+    margin: 32px;
+}
+
+.btn-2{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25em;
+    margin: 32px;
+}
+
+.button-1{
+    background: #333333;
+    border-radius: 30px;
+    border-style: inset;
+    transition: transform 0.3s ease;
+    left: 31%;
+}
+
+.button-2{
+    background: #999999;
+    border-radius: 30px;
+    border-style: inset;
+    transition: transform 0.3s ease;
+    left: 44%;
+}
+
+.button-3{
+    background: #9da0a7;
+    border-radius: 30px;
+    border-style: inset;
+    transition: transform 0.3s ease;
+    left: 56%;
+}
+
+.button-1::after, .button-1::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3%;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+/* buttons*/
+
+.button-1:hover{
+    transform: translate(-12px, -12px);
+}
+
+.button-1:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.button-1:hover::before{
+    transform: translate(12px, 12px);
+}
+
+.button-2:hover{
+    transform: translate(-12px, -12px);
+}
+
+.button-2:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.button-2:hover::before{
+    transform: translate(12px, 12px);
+}
+
+.button-3:hover{
+    transform: translate(-12px, -12px);
+}
+
+.button-3:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.button-3:hover::before{
+    transform: translate(12px, 12px);
+}
+
+/*buttons*/
+
+article{
+    border-style: inset;
+    border-radius: 15px;
+    border-color: rgba(0,0,0,0.7);
+    background: rgba(255, 255, 255, .3);
+    padding: 40px 60px;
+    margin: 160px;
+}
+
+.article-1{
+    padding: 10%;
+    align-items: center;
+}
+
+.article-3 hr{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-inline: 10%;
+}
+
+.article-2 h1{
+    text-align: center;
+    font-size: 250%;
+}
+
+.article-2 hr{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-inline: 10%;
+}
+
+.article-2 p{
+    padding-left: 25%;
+}
+
+.article-2 ul{
+    padding-left: 25%;
+}
+
+.article-4{
+    text-align: center;
+}
+
+.sec-header{
+    padding-left: 25%;
+}
+
+.sec-header2{
+    padding-left: 25%;
+}
+
+.article-3 div{
+    display: flex;
+}
+
+.article-3 h1{
+    font-style: italic;
+    text-align: center;
+    font-size: 300%;
+}
+
+.article-3 p{
+    text-align: center;
+    font-size: 225%;
+}
+
+.list{
+    padding-left: 10%;
+}
+
+.p-1 p{
+    padding-bottom: 2%;
+    font-size: 120%;
+}
+
+.p-1 h1{
+    font-size: 450%;
+}
+.p-1 h2{
+    font-size: 450%;
+}
+
+.p-1 h3{
+    font-size: 450%;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.2);
+    height: auto;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
